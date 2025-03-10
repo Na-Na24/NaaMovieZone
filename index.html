@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaaMovieZone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-film"></i>
+            <span>NaaMovieZone</span>
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#movies">Movies</a>
+            <a href="#tv-shows">TV Shows</a>
+            <a href="#genres">Genres</a>
+            <a href="#" id="premium-btn" class="premium-btn">Go Premium</a>
+    <a href="#" id="watchlist-btn">My Watchlist</a>
+</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search movies...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to NaaMovieZone</h1>
+                <p>Stream your favorite movies anytime, anywhere.</p>
+            </div>
+        </section>
+
+        <section class="featured-movies">
+            <h2>Featured Movies</h2>
+            <div class="movie-grid">
+                <!-- Movie cards will be dynamically added here -->
+            </div>
+        </section>
+
+        <section class="genres">
+            <h2>Browse by Genre</h2>
+            <div class="genre-list">
+                <button class="genre-btn">Action</button>
+                <button class="genre-btn">Comedy</button>
+                <button class="genre-btn">Drama</button>
+                <button class="genre-btn">Horror</button>
+                <button class="genre-btn">Sci-Fi</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-film"></i>
+                <span>NaaMovieZone</span>
+            </div>
+            <div class="footer-links">
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 NaaMovieZone. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <div id="premium-modal" class="modal">
+        <div class="modal-content">
+            <h2>Upgrade to Premium</h2>
+            <p>Get access to premium content for $9.99/month</p>
+            <button id="subscribe-btn">Subscribe Now</button>
+        </div>
+    </div>
+
+    <script src="https://js.stripe.com/v3/"></script>
+</body>
+</html>
